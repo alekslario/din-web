@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default padding/margin on body */
+body {
+  margin: 0;
+  /* padding: 50px 100px; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif; /* Change the font as needed */
+  background-color: #f7f7f7; /* Set your preferred background color */
+  color: #333; /* Set default text color */
+  line-height: 1.6; /* Set line height for readability */
+}
+
+/* Basic styling for anchor tags */
+a {
+  text-decoration: none; /* Remove underline by default */
+  color: #0077cc; /* Set default link color */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+p,
+div {
+  max-width: 1000px;
+}
+
+/* Set a max-width for the main content area */
+.container {
+  max-width: 1200px; /* Adjust as per your layout needs */
+  margin: 0 auto; /* Center the content */
+  padding: 0 20px; /* Add padding to the container */
+}
+
+/* Basic header styles */
+header {
+  color: #fff; /* Header text color */
+  padding: 20px 0; /* Header padding */
+  text-align: center; /* Center header text */
+}
+main {
+  margin: 0 auto;
+}
+/* Basic footer styles */
+footer {
+  margin-top: auto;
+  width: 100vw;
+  background-color: #333; /* Footer background color */
+  color: #fff; /* Footer text color */
+  padding: 10px 0; /* Footer padding */
+  text-align: center; /* Center footer text */
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.block {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Basic styles for h2 */
+h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Basic styles for input */
+input {
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+/* Basic styles for button */
+.my-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.my-button:hover {
+  background-color: #0056b3;
+}
+
+footer p {
+  margin: 0 auto;
+}
+
+/* Styling for the list */
+.drink-list {
+  list-style: none;
+  padding: 0;
+}
+
+.drink-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.drink-list li:last-child {
+  border-bottom: none;
+}
+
+.drink-list li::before {
+  content: "•";
+  color: #ffa500; /* Adjust the color of the bullet point */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
